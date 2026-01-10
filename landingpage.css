@@ -1,0 +1,303 @@
+
+@media (max-width: 768px) {
+  .title{
+    font-size: 2rem;
+  }
+  nav .nav-links li a{
+    font-size: 18px;
+  }
+  main .container ul.box li img{
+    width: 200px; 
+    height: 150px;
+  }
+  main .container ul.box li p{
+    font-size: 1.2em;
+  }
+  main .container ul.box li span{
+    font-size: 1rem;
+  }
+  #menu h2{
+    font-size: 2rem;
+  }
+  #menu .details{
+    font-size: 1.5rem;
+  }
+  #contact h2, #about h2{
+    font-size: 2rem;
+  }
+  #contact p, #about p{
+    font-size: 1.2rem;
+  }
+} 
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --color-1: #7713ea;
+  --color-2: #033a1a;
+  --color-3: #061080;
+  --color-4: #410558;
+  --color-5: #460528;
+  --color-6: #fff;
+  --color-7:#000;
+  --color-8: #b77f17;
+}
+
+body {
+  background-image: url(https://theexpatmummy.com/wp-content/uploads/2023/02/slate-nairobi-1536x928.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  max-width: 1000vw;
+}
+header{
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px 0;
+}
+.title{
+  text-align: center;
+  color: var(--color-4);
+  margin: 10px;
+  font-size: 3rem;
+  font-weight: bold;
+}
+nav{
+  
+}
+nav .nav-links {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+nav .nav-links li {
+  list-style: none;
+  
+}
+nav .nav-links li a{
+  text-decoration: none;
+  color: var(--color-6);
+  font-size: 26px;
+  -o-transition: text-decoration 0.3s ease-in-out;
+  -webkit-transition: text-decoration 0.3s ease-in-out;
+  -moz-transition: text-decoration 0.3s ease-in-out;
+  -ms-transition: text-decoration 0.3s ease-in-out;
+  transition: text-decoration 0.3s ease-in-out;
+
+}
+nav .nav-links li .cart{
+  padding: 5px 20px;
+  -o-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  border-radius: 16px;
+  border:none;
+  background-color: var(--color-1);
+  color:aquamarine;
+  font-size: 20px;
+}
+nav .nav-links li a:hover, nav .nav-links li .cart:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+nav .nav-links li a:hover, nav .nav-links li svg{
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+}
+
+
+
+
+
+main .container ul.box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 20px auto;
+  -webkit-animation: alternateslide 19s  alternate;
+  animation: alternateslide 19s  alternate;
+}
+@keyframes alternateslide {
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    -o-transform: translateX(-5%);
+    -webkit-transform: translateX(-5%);
+    -moz-transform: translateX(-5%);
+    -ms-transform: translateX(-5%);
+    transform: translateX(-5%);
+}}
+main .container ul.box li{
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+  background-color:var(--color-2);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(11, 44, 232, 0.174);
+}
+main .container ul.box li img{
+  width: 300px; 
+  height: 200px;
+  -o-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+
+main .container ul.box li img:hover{
+  -o-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+main .container ul.box li p{
+  font-size: 1.5em;
+  color: var(--color-6)
+}
+main .container ul.box li span{
+  font-size: 1.2rem;
+  color: var(--color-8)
+}
+main .container ul.box li button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-left: 60px;
+  -o-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  border-radius: 16px;
+  border: none;
+  background-color: var(--color-1);
+  color:aquamarine;
+}
+main .container ul.box li button:hover{
+  background-color: var(--color-4);
+  cursor: pointer;
+}
+
+#menu{
+  width: 90%;
+  margin-top: 24px;
+}
+#menu h2{
+  text-align: center;
+  color: var(--color-1);
+  font-size: 3rem;
+  text-decoration: underline;
+
+}
+#menu .details{
+  font-size: 2.5em;
+  color: var(--color-5);
+  margin: 10px;
+}
+#menu .container ul.box.list{
+  justify-content: center;
+  -webkit-animation: none;
+  animation: none;
+}
+#contact, #about{
+  width: 90%;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: var(--color-2);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(11, 44, 232, 0.174);
+}
+
+#contact h2, #about h2{
+  text-align: center;
+  color: var(--color-1);
+  font-size: 3rem;
+  text-decoration: underline;
+}
+#contact p, #about p{
+  font-size: 1.5rem;
+  color: var(--color-6);
+  margin: 10px;
+}
+#contact p a{
+  color: var(--color-8);
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: var(--color-8);
+  color: var(--color-6);
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(11, 44, 232, 0.174);
+  border-radius: 10px;
+}
+
+li .span{
+  display: block;
+  margin-top: -65px;
+  margin-left: 100px;
+  color: var(--color-6);
+  font-size: 1.2em;
+}
+li .span:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/*Toggle View Cart */
+
+.active{
+  opacity: 0;
+  
+}
+
+/* CART IMAGE */
+.cart-item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: var(--color-6)
+}
+
+.cart-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.cart-info {
+  flex: 1;
+}
+
+.cart-title{
+  font-size: 2.5em;
+  margin-bottom: 5px;
+  color: var(--color-4);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color-6);
+  font-size: 1.2em;
+}
+
+.total-price{
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--color-6);
+}
