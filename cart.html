@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="landingpage.css">
+</head>
+<body>
+
+<h1 class="cart-title">Your Cart</h1>
+<a href="index.html" class="link">⬅ Back</a>
+
+<div id="view-cart"></div>
+
+<h2 id="total-price"></h2>
+
+<button onclick="clearCart()">Clear Cart</button>
+
+
+
+<script>
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const viewCart = document.getElementById("view-cart");
+  const totalPriceEl = document.getElementById("total-price");
+
+
+  function displayCart() {
+    viewCart.innerHTML = "";
+    let total = 0;
+
+    if (cart.length === 0) {
+      viewCart.innerHTML = "<p>Your cart is empty</p>";
+      totalPriceEl.textContent = "";
+      return;
+    }
+
+    cart.forEach((item, index) => {
+      const qty = item.quantity || 1;
+      total += item.price * qty;
+
+      viewCart.innerHTML += `
+        <div class="cart-item">
+          <img src="${item.image}" class="cart-img">
+
+          <div class="cart-info">
+            <h3>${item.name}</h3>
+            <p>$Price: ${item.price}</p>
+
+            <div class="qty">
+              <button onclick="decrease(${index})">−</button>
+              <span>Quantity: ${qty} </span>
+              <button onclick="increase(${index})">+</button>
+            </div>
+
+            <button onclick="removeItem(${index})">Remove</button>
+          </div>
+        </div>
+      `;
+    });
+
+    totalPriceEl.textContent = "Total: $ " + total.toLocaleString();
+    totalPriceEl.className = "total-price";
+
+  }
+
+  function increase(index) {
+    cart[index].quantity++;
+    save();
+  }
+
+  function decrease(index) {
+    if (cart[index].quantity > 1) {
+      cart[index].quantity--;
+    } else {
+      cart.splice(index, 1);
+    }
+    save();
+  }
+
+  function removeItem(index) {
+    cart.splice(index, 1);
+    save();
+  }
+
+  function clearCart() {
+    cart = [];
+    save();
+  }
+
+  function save() {
+    localStorage.setItem("cart", JSON.stringify(cart));
+    displayCart();
+  }
+
+  displayCart();
+</script>
+
+</body>
+</html>
