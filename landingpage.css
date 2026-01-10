@@ -104,11 +104,7 @@ nav .nav-links li a:hover, nav .nav-links li .cart:hover{
   text-decoration: underline;
   cursor: pointer;
 }
-nav .nav-links li a:hover, nav .nav-links li svg{
-  cursor: pointer;
-  width: 28px;
-  height: 28px;
-}
+
 
 
 
@@ -253,13 +249,6 @@ li .span{
 li .span:hover{
   cursor: pointer;
   text-decoration: underline;
-}
-
-/*Toggle View Cart */
-
-.active{
-  opacity: 0;
-  
 }
 
 /* CART IMAGE */
