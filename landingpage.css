@@ -7,13 +7,15 @@
   background-attachment: fixed;
   color: black;
   font-family: Arial, sans-serif;
+  width: 100%;
   }
   .title{
     font-size: 2rem;
   }
   nav .nav-links li a{
-    font-size: 16px;
-    
+    font-size: 12px;
+    gap: 10px;
+    justify-content: space-between;
   }
   main .container ul.box li img{
     width: 200px; 
@@ -95,7 +97,6 @@ nav .nav-links li a{
   -moz-transition: text-decoration 0.3s ease-in-out;
   -ms-transition: text-decoration 0.3s ease-in-out;
   transition: text-decoration 0.3s ease-in-out;
-  gap: 10px;
 }
 nav .nav-links li .cart{
   padding: 5px 20px;
