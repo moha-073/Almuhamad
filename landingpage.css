@@ -12,7 +12,8 @@
     font-size: 2rem;
   }
   nav .nav-links li a{
-    font-size: 18px;
+    font-size: 16px;
+    
   }
   main .container ul.box li img{
     width: 200px; 
@@ -88,7 +89,7 @@ nav .nav-links li {
 nav .nav-links li a{
   text-decoration: none;
   color: var(--color-4);
-  font-size: 26px;
+  font-size: 20px;
   -o-transition: text-decoration 0.3s ease-in-out;
   -webkit-transition: text-decoration 0.3s ease-in-out;
   -moz-transition: text-decoration 0.3s ease-in-out;
