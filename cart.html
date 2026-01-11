@@ -15,7 +15,7 @@
 
 <h2 id="total-price"></h2>
 
-<button onclick="clearCart()">Clear Cart</button>
+<button onclick="clearCart()" class="clear-btn">Clear Cart</button>
 
 
 
@@ -45,7 +45,7 @@
 
           <div class="cart-info">
             <h3>${item.name}</h3>
-            <p>$Price: ${item.price}</p>
+            <p>Price: $${item.price}</p>
 
             <div class="qty">
               <button onclick="decrease(${index})">−</button>
@@ -53,7 +53,7 @@
               <button onclick="increase(${index})">+</button>
             </div>
 
-            <button onclick="removeItem(${index})">Remove</button>
+            <button onclick="removeItem(${index})" class="remove-btn">Remove</button>
           </div>
         </div>
       `;
