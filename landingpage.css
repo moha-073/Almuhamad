@@ -87,7 +87,7 @@ nav .nav-links li {
 }
 nav .nav-links li a{
   text-decoration: none;
-  color: var(--color-6);
+  color: var(--color-4);
   font-size: 26px;
   -o-transition: text-decoration 0.3s ease-in-out;
   -webkit-transition: text-decoration 0.3s ease-in-out;
@@ -264,7 +264,7 @@ li .span:hover{
   display: flex;
   gap: 15px;
   align-items: center;
-  color: var(--color-6);
+  color: var(--color-2);
   margin-left: 10px;
 }
 
@@ -288,14 +288,14 @@ li .span:hover{
 
 .link {
   text-decoration: none;
-  color: var(--color-6);
+  color: var(--color-1);
   font-size: 1.2em;
 }
 
 .total-price{
   font-size: 2em;
   font-weight: bold;
-  color: var(--color-6);
+  color: var(--color-2);
 }
 
 .clear-btn{
