@@ -1,11 +1,13 @@
 
 @media (max-width: 768px) {
+
   .title{
     font-size: 2rem;
   }
+  
   nav .nav-links li a{
-    font-size: 12px;
-    text-wrap: nowrap;
+    margin-right: 5px;
+    padding: 2px 5px;
   }
   main .container ul.box li img{
     width: 200px; 
