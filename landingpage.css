@@ -1,21 +1,11 @@
 
 @media (max-width: 768px) {
-  body{
-  background-image: url(https://theexpatmummy.com/wp-content/uploads/2023/02/slate-nairobi-1536x928.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: black;
-  font-family: Arial, sans-serif;
-  width: 100%;
-  }
   .title{
     font-size: 2rem;
   }
   nav .nav-links li a{
     font-size: 12px;
-    gap: 10px;
-    justify-content: space-between;
+    text-wrap: nowrap;
   }
   main .container ul.box li img{
     width: 200px; 
