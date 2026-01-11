@@ -95,7 +95,7 @@ nav .nav-links li a{
   -moz-transition: text-decoration 0.3s ease-in-out;
   -ms-transition: text-decoration 0.3s ease-in-out;
   transition: text-decoration 0.3s ease-in-out;
-
+  gap: 10px;
 }
 nav .nav-links li .cart{
   padding: 5px 20px;
