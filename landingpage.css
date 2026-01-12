@@ -69,7 +69,11 @@ header{
   font-size: 3rem;
   font-weight: bold;
 }
-
+nav{
+  margin: 0 auto;
+  padding: 10px 5px;
+  background-color: rgb(44, 100, 118);
+}
 nav .nav-links {
 display: flex;
 flex-direction: row;
@@ -83,7 +87,7 @@ nav .nav-links li {
 nav .nav-links li a{
   text-decoration: none;
   color: var(--color-4);
-  font-size: 20px;
+  font-size: 16px;
   -o-transition: text-decoration 0.3s ease-in-out;
   -webkit-transition: text-decoration 0.3s ease-in-out;
   -moz-transition: text-decoration 0.3s ease-in-out;
@@ -100,7 +104,7 @@ nav .nav-links li .cart{
   border:none;
   background-color: var(--color-1);
   color:aquamarine;
-  font-size: 20px;
+  font-size: 18px;
 }
 nav .nav-links li a:hover, nav .nav-links li .cart:hover{
   text-decoration: underline;
@@ -108,7 +112,13 @@ nav .nav-links li a:hover, nav .nav-links li .cart:hover{
 }
 
 
-
+#home{
+  text-align: center;
+  color: var(--color-1);
+  font-size: 3rem;
+  margin-top: 20px;
+  text-decoration: underline;
+}
 
 
 
